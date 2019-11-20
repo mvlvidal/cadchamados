@@ -7,7 +7,7 @@ body{
 #content{
     background-color:#F2F2F2;
     margin:0 auto;
-    max-width:70%;
+    /*max-width:70%; */
     border-radius:15px;
 }
 
@@ -62,6 +62,12 @@ body{
 .tabela td{
     color:#1C1C1C;
     background-color:#A4A4A4;
+}
+
+.tabela td p{
+    word-wrap: break-word;
+    text-align: justify;
+    max-width: 700px;  
 }
 
 .formulario{

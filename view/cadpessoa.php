@@ -32,7 +32,7 @@
                         <label>Ativo:</label>
                     </div>
                     <div class="coluna-form">
-                        <input type="checkbox" id="pAtivo" name="pAtivo" value="1">
+                        <input type="checkbox" id="pAtivo" name="pAtivo" value="1" />
                     </div>
                 </div>
                 <div class="linha-form">

@@ -45,7 +45,7 @@ function listarChamados(){
                 itens += "<td>"+ dados[i].titulo +"</td>";
                 itens += "<td>"+ dados[i].data +"</td>";
                 itens += "<td>"+ dados[i].urgencia +"</td>";
-                itens += "<td>"+ dados[i].descricao +"</td>";
+                itens += "<td><p>"+ dados[i].descricao +"</p></td>";
                 itens += "<td>"+ dados[i].nomeReq +"</td>";
                 itens += "<td>"+ dados[i].nomeTec +"</td>";
                 itens += "<td>"+"<button onclick='deletarChamado("+dados[i].id+")'>Deletar</button>"+"</td>";
@@ -60,16 +60,21 @@ function listarChamados(){
 
 function deletarChamado(id){
 
-    $.ajax({
-        url : "service/chamado/deletar.ChamadoService.php",
-        type: "post",
-        dataType: "text",
-        data: {'id': id},
-        success:function(retorno){
+    if(confirm("Deseja realmente excluir o chamado de ID:"+id+" ?")){
 
-            alert(retorno);
-            listarChamados();
-            
-        }
-    });
+        $.ajax({
+            url : "service/chamado/deletar.ChamadoService.php",
+            type: "post",
+            dataType: "text",
+            data: {'id': id},
+            success:function(retorno){
+    
+                alert(retorno);
+                listarChamados();
+                
+            }
+        });
+
+    }
+    
 }

@@ -72,7 +72,7 @@ class PessoaDao extends Conexao{
 
         $conn = $this->conectar();
 
-        $sql = "SELECT * FROM pessoa WHERE tipo = 'r' ";
+        $sql = "SELECT * FROM pessoa WHERE tipo = 'r' and ativo = 1 ";
 
         $stmt = $conn->prepare($sql);
 
@@ -87,7 +87,7 @@ class PessoaDao extends Conexao{
 
         $conn = $this->conectar();
 
-        $sql = "SELECT * FROM pessoa WHERE tipo = 't' ";
+        $sql = "SELECT * FROM pessoa WHERE tipo = 't' and ativo = 1 ";
 
         $stmt = $conn->prepare($sql);
 

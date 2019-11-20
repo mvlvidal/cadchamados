@@ -9,7 +9,10 @@ $(document).ready(function(){
     $("#btn-gravarPessoa").click(function(){
 
         //Este método serve para inserir e atualizar, assim como o servico em PHP
+
         var form =  new FormData($("#formPessoa")[0]);
+
+        var ret = '';
 
         if(form.get('pAtivo') != 1){
             form.set('pAtivo', 0);
@@ -45,13 +48,19 @@ $(document).ready(function(){
             contentType:false,
             data:form,
             success:function(retorno){
-                alert(retorno);
-                
+                ret = retorno;    
             }
         });
 
-        listarPessoas();         
-        event.preventDefault();
+        listarPessoas(); 
+
+        if(ret != null){              
+            window.location.href = "?p=cadpessoa";  
+            return false;  
+                  
+        }
+
+        
         
     });
 });
