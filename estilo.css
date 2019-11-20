@@ -1,0 +1,122 @@
+body{
+    font-family: 'Trebuchet MS';
+    background-color:#000;
+    font-size: 14pt;
+}
+
+#content{
+    background-color:#F2F2F2;
+    margin:0 auto;
+    max-width:70%;
+    border-radius:15px;
+}
+
+#conteudo{
+    padding:10px;
+}
+
+#menu{
+    width:100%;
+    background-color:#8A0808;
+    border-radius:15px 15px 0 0;
+}
+#menu ul{
+    margin:0;
+}
+#menu ul li{
+    margin:0;
+    display: inline-block;
+}
+
+#menu ul li a{
+    margin:0;
+    padding:8px;
+    display:block;
+    color:#fff;
+    list-style:none;
+    text-align:center;
+    text-decoration:none;
+    font-weight: bolder;
+}
+
+#menu ul li a:hover{
+    background-color:#DF0101;
+}
+
+.titulo{
+    width:100%;
+    text-align: center;
+    border-bottom:2px #000 dashed;
+}
+
+.tabela{
+    width:100%;
+    text-align: center;
+}
+
+.tabela th{
+    background-color:#8A0808;
+    color:#fff;
+}
+
+.tabela td{
+    color:#1C1C1C;
+    background-color:#A4A4A4;
+}
+
+.formulario{
+    width:100%;
+    margin:0 auto;
+    background-color: #F2F2F2;
+}
+
+.formulario label{
+    font-weight: bold;
+}
+
+.linha-form{
+    width:100%;
+    padding:5px;
+    float:inline-start;
+}
+
+.coluna-form{
+    text-align: center;
+    width:48%;
+    margin:2px;
+    float:inline-start;
+    border:2px solid;
+    height:30px;
+}
+
+.coluna-form-textarea{
+    text-align: center;
+    width:48%;
+    margin:2px;
+    float:inline-start;
+    border:2px solid;
+    height:50px;
+}
+
+.coluna-form-textarea textarea{
+    width:99%;
+    height:40px;
+}
+
+
+.formulario input[type="text"]{
+    width:99%;
+    height: 25px;
+}
+
+.btn-gravar{
+    width:100px;
+    height:30px;
+}
+
+footer{
+    text-align: center;
+    padding:5px;
+}
+
+
